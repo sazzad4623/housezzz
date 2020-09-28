@@ -1,7 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Main from "./main";
-import Contact from "./contact";
 
 export default function Navbar() {
   return (
@@ -46,19 +44,29 @@ export default function Navbar() {
         <nav className="main-menu">
           <ul>
             <li>
-              <a href="./index.html">Home</a>
+              <Link to="/">
+                <a>Home</a>
+              </Link>
             </li>
             <li>
-              <a href="./property.html">Property</a>
+              <Link to="/property">
+                <a>Property</a>
+              </Link>
             </li>
             <li>
-              <a href="./about-us.html">Agets</a>
+              <Link to="/about">
+                <a>About Us</a>
+              </Link>
             </li>
             <li>
-              <a href="./blog.html">News</a>
+              <Link to="/blog">
+                <a>Blog</a>
+              </Link>
             </li>
             <li>
-              <a href="./property-details.html">Pages</a>
+              <Link to="/propertydetails">
+                <a>Pages</a>
+              </Link>
             </li>
             <li>
               <Link to="/contact">
@@ -105,19 +113,29 @@ export default function Navbar() {
                 <nav className="main-menu">
                   <ul>
                     <li className="active">
-                      <a href="./index.html">Home</a>
+                      <Link to="/">
+                        <a>Home</a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="./property.html">Property</a>
+                      <Link to="/property">
+                        <a>Property</a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="./about-us.html">Agets</a>
+                      <Link to="/about">
+                        <a>About Us</a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="./blog.html">News</a>
+                      <Link to="/blog">
+                        <a>Blog</a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="./property-details.html">Pages</a>
+                      <Link to="/propertydetails">
+                        <a>Pages</a>
+                      </Link>
                     </li>
                     <li>
                       <Link to="/contact">

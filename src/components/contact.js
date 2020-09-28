@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Contact() {
   return (
@@ -10,9 +11,11 @@ function Contact() {
               <div className="breadcrumb-text">
                 <h2>Contact Us</h2>
                 <div className="breadcrumb-option">
-                  <a href="#">
-                    <i className="fa fa-home" /> Home
-                  </a>
+                  <Link to="/">
+                    <a>
+                      <i className="fa fa-home" /> Home
+                    </a>
+                  </Link>
                   <span>Contact</span>
                 </div>
               </div>
