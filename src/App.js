@@ -1,14 +1,17 @@
 import React from "react";
-import Main from "./components/main";
-
-import Contact from "./components/contact";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+import Routing from "./Routing";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Main />
+      <BrowserRouter>
+        <Navbar></Navbar>
+        <Routing></Routing>
+        <Footer></Footer>
+      </BrowserRouter>
     </div>
   );
 }

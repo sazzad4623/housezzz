@@ -3,32 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.css";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
 import * as serviceWorker from "./serviceWorker";
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  BrowserRouter,
-} from "react-router-dom";
-import Main from "./components/main";
-
-import Contact from "./components/contact";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Navbar />
-      <App />
-      <Footer />
-      <Switch>
-        <Route exact path="/" component={Main} />
-        <Route exact path="/contact" component={Contact}></Route>
-      </Switch>
-    </BrowserRouter>
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
